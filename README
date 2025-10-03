@@ -1,0 +1,44 @@
+TataMotors Stock Price Forecasting using LSTM
+Introduction
+Stock price forecasting is a critical and challenging task due to the inherent volatility of financial markets. Accurate predictions help investors, analysts, and internal stakeholders at TataMotors make informed business and investment decisions. This project explores stock price prediction using both technical and fundamental analysis, with a focus on leveraging historical data and market trends to forecast future prices.
+
+Objective
+
+Predict the day-to-day stock price movements of TataMotors.
+Evaluate the effectiveness of Time Series Forecasting and LSTM models in improving predictive accuracy.
+Provide insights that can guide TataMotors in strategic planning and investment decisions.
+
+Data
+
+Source: Yahoo Finance
+ via yfinance API.
+
+Data includes historical stock prices, trading volume, and other financial indicators.
+
+Technical Indicators
+
+Traders commonly use technical indicators for analysis, including:
+RSI (Relative Strength Index) and RSI Divergences
+MACD (Moving Average Convergence Divergence)
+
+Methodology
+
+Data Collection: Fetch TataMotors stock data using yfinance.
+Preprocessing: Clean and normalize the dataset; split into training and testing sets.
+
+Modeling:
+
+Univariate LSTM: Uses only past stock prices to predict future prices.
+Multivariate LSTM: Incorporates multiple features including technical indicators for prediction.
+
+Prediction:
+
+Evaluate model on test data and visualize predictions.
+Forecast stock prices for the next 30 days and plot the results.
+
+Tools & Libraries
+
+Python, Pandas, NumPy
+Matplotlib, Seaborn
+TensorFlow / Keras for LSTM modeling
+yfinance for data collection
